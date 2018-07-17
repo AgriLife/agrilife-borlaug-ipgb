@@ -1,3 +1,54 @@
+/* Site header changes */
+.site-header .search-form {
+	float: none;
+	width: 100%;
+	margin-top: 0;
+}
+
+.site-header .widget,
+.site-header .search-form input[type="search"],
+.header-widget-area .simple-social-icons ul li a,
+.header-widget-area .simple-social-icons svg[class^="social-"] {
+	height: 50px;
+}
+
+.header-widget-area .simple-social-icons svg[class^="social-"] {
+	width: 25px;
+	height: 25px;
+}
+
+.header-widget-area .simple-social-icons ul li a {
+	width: 50px;
+	box-sizing: border-box;
+	padding: 12.5px;
+	border-radius: 6px;
+}
+
+.site-header .widget {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+}
+
+.home-top .widget.soliloquy + .widget,
+.outreach-pro-maroon .nav-primary,
+.outreach-pro-maroon .sidebar .widget {
+	background-color: #5E564E;
+}
+
+.outreach-pro-maroon .widget-title,
+.outreach-pro-maroon .sidebar {
+	color: #fff;
+}
+
+.outreach-pro-maroon .sidebar a,
+.outreach-pro-maroon .sidebar a:hover,
+.outreach-pro-maroon .sidebar li a,
+.outreach-pro-maroon .sidebar li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
 .outreach-pro-home .site-inner > .wrap {
 	max-width: 2000px;
 }
@@ -24,10 +75,16 @@
 	padding: 1.5rem;
 }
 
+.home-top .soliloquy-container h3 {
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
 .home-top .widget.soliloquy + .widget {
 	color: #fff;
 	padding: 1.5rem;
-	background-color: #56565a;
 }
 
 .home-top .widget.soliloquy + .widget .widget-wrap {

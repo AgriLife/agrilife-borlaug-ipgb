@@ -36,6 +36,18 @@ add_filter( 'ag-people-list-item', function($listing, $data){
 
 }, 11, 2);
 
+add_filter( 'soliloquy_output_caption', 'ipgb_soliloquy_title_before_caption', 10, 5 );
+
+function ipgb_soliloquy_title_before_caption( $caption, $id, $slide, $data, $i ) {
+
+  if ( isset( $slide['title'] ) && !empty( $slide['title'] ) ) {
+    $caption = "<h3>{$slide['title']}</h3>" . $caption;
+  }
+
+  return $caption;
+
+}
+
 add_action( 'wp_enqueue_scripts', 'borlaug_ipgb_register_styles' );
 add_action( 'wp_enqueue_scripts', 'borlaug_ipgb_enqueue_styles' );
 
